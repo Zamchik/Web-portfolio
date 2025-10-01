@@ -4,7 +4,11 @@
     "noImplicitAny": true,
     "module": "esnext",
     "target": "es5",
+<<<<<<< HEAD
     "jsx": "react-jsx",
+=======
+    "jsx": "react",
+>>>>>>> 1f0c8f2ae9fa2a6e6202280c22532a4c3ece5949
     "allowJs": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
