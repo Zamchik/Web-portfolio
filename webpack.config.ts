@@ -1,12 +1,10 @@
 import webpack from 'webpack';
 import { buildWebpack } from './config/build/buildWebpack';
-import { Mode } from 'fs';
 import path from 'path';
-import { BuildPaths } from './config/build/types/types';
-
+import { BuildMode, BuildPaths } from './config/build/types/types';
 
 interface EnvVariables {
-    mode: Mode;
+    mode: BuildMode;
     port: number;
 }
 
