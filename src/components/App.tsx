@@ -9,7 +9,7 @@ export const App = () => {
 
     return (
         <div>
-            <h1>{count}</h1>
+            <h1 className={classes.value}>{count}</h1>
             <button className={classes.button} onClick={increment}><span>
                 asfasf
             </span></button>
