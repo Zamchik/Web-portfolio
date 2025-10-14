@@ -5,10 +5,22 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
     const isDev = options.mode === 'development'
 
-    const assetLoader =       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+    const assetLoader = {
+        test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
-      }
+    }
+
+    const svgrLoader = {
+        test: /\.svg$/i,
+        use: [
+            {
+                loader: '@svgr/webpack',
+                options: {
+                    icon: true
+                }
+            }
+        ],
+    }
 
     const scssLoader = {
         test: /\.s[ac]ss$/i,
@@ -32,13 +44,14 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
     }
 
     const tsLoader = {
-            test: /\.tsx?$/,
-            use: 'ts-loader',
-            exclude: /node_modules/,
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
     }
     return [
         assetLoader,
         scssLoader,
         tsLoader,
+        svgrLoader,
     ]
 }
