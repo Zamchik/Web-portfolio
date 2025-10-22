@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkweb_portfolio=self.webpackChunkweb_portfolio||[]).push([[392],{392:(e,t,o)=>{o.r(t),o.d(t,{default:()=>n});var l=o(540);const n=function(){return l.createElement("div",null,"Shop")}}}]);

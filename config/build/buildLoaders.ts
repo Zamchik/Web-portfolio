@@ -2,6 +2,7 @@ import { ModuleOptions } from "webpack";
 import { BuildOptions } from "./types/types";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import ReactRefreshTypeScript from "react-refresh-typescript";
+import { buildBabelLoader } from "./babel/buildBabelLoaders";
 
 export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
     const isDev = options.mode === 'development'
@@ -44,22 +45,7 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
         ],
     }
 
-    const babelLoader = {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
-        use: {
-            loader: "babel-loader",
-            options: {
-                presets: [
-                    '@babel/preset-env',
-                    "@babel/preset-typescript",
-                    ["@babel/preset-react", {
-                        runtime: isDev ? "automatic" : "classic"
-                    }],
-                ]
-            }
-        }
-    }
+    const babelLoader = buildBabelLoader(options);
 
     const tsLoader = {
         test: /\.tsx?$/,
