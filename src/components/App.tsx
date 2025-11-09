@@ -8,13 +8,13 @@ import Telegram from '@/assets/telegram3.svg'
 
 export const App = () => {
     const [count,setCount] = useState<number>(0)
-    //
+
     const increment = () => setCount((prev => prev + 1))
-    //
+
     // if(__PLATFORM__ === 'desktop') {
     //     return <div>ISDESKTOPPLATFORM</div>
     // }
-    //
+
     // if(__PLATFORM__ === 'mobile') {
     //     return <div>ISMOBILEPLATFORM</div>
     // }
@@ -28,7 +28,7 @@ export const App = () => {
                 <img src={telegram2} width={185} height={100} alt="" />
             </div>
             <div>
-                <Telegram width={100} height={100} fill={'red'}/>
+                <Telegram width={100} height={100} fill={'green'}/>
             </div>
             <Link to={'/about'}>Об о мне</Link>
             <br/>
