@@ -4,6 +4,7 @@ import path from "path";
 import webpack, { Configuration, DefinePlugin } from "webpack";
 import { BuildOptions } from "./types/types";
 import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
+import ReactRefreshPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 
 export function buildPlugins({mode, paths, analyzer, platform}: BuildOptions): Configuration['plugins'] {
     const isDev = mode === 'development'
@@ -16,9 +17,9 @@ export function buildPlugins({mode, paths, analyzer, platform}: BuildOptions): C
         })
         ]
 
-    // if(isDev) {
-
-    // }
+    if(isDev) {
+        plugins.push(new ReactRefreshPlugin)
+    }
 
     if(isProd) {
         plugins.push(new MiniCssExtractPlugin({
