@@ -1,15 +1,14 @@
-* {
-  border: 0px;
-  box-sizing: border-box;
-  font-weight: inherit;
-  margin: 0px;
-  outline: 0px;
-  padding: 0px;
-  text-decoration: none;
-  text-rendering: optimizelegibility;
-  appearance: none;
-  z-index: 99;
-  position: relative;
+:global {
+  html, body, #root {
+    background-color: #23272f;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Inter, "sans-serif";
+  }
 }
 
 .nav {
@@ -20,4 +19,12 @@
   border: 2px solid rgb(204 204 204);
   border-radius: 45px;
   margin: 24px;
+}
+
+.dark {
+  background-color: #23272f;
+}
+
+.light {
+  background-color: white;
 }

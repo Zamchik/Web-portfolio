@@ -19,8 +19,7 @@ export default (env: EnvVariables) => {
         public: path.resolve(__dirname, 'public'),
         src: path.resolve(__dirname, 'src'),
     }
-    // const isDev = env.mode === 'development'
-    // const isProd = env.mode === 'production'
+
     const config: webpack.Configuration = buildWebpack({
         port: env.port ?? 3000,
         mode: env.mode ?? 'development',

@@ -1,5 +1,5 @@
-import dark from "./theme/dark.png";
-import light from "./theme/light.png";
+import dark from "./themeDarkAndLight/dark.png";
+import light from "./themeDarkAndLight/light.png";
 
 export const themeIcons = {
     dark,
