@@ -6,15 +6,18 @@ import {useTheme} from "@/components/ui/ThemeProvider";
 export const App = () => {
     const { isDark } = useTheme()
     return (
-        <div className={`${isDark ? styles.dark : styles.light}`}>
-            <header>
+        <body className={`${isDark ? styles.dark : styles.light}`}>
+            <header className={styles.header}>
+                <div className={styles.nickname}>Zamchik.dev</div>
                 <nav className={styles.nav}>
                     <div>Об о мне</div>
                     <div>Проекты</div>
-                    <div>Ссылки</div>
+                    <div>Контакты</div>
                     <ThemeButton/>
+                    <div><div
                 </nav>
             </header>
-        </div>
+            
+        </body>
     );
 };

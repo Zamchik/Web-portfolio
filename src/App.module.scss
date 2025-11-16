@@ -11,20 +11,42 @@
   }
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nickname {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  margin: 0;
+  padding-left: 16px;
+}
+
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
-  padding: 8px 12px;
+  gap: 24px;
+  padding: 8px 20px;
   border: 2px solid rgb(204 204 204);
   border-radius: 45px;
-  margin: 24px;
+  margin: 0 16px;
 }
 
 .dark {
   background-color: #23272f;
+  color: #ffffff;
 }
 
 .light {
   background-color: white;
+  color: #000000;
 }
