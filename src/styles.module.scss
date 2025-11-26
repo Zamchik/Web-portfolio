@@ -1,0 +1,26 @@
+:global {
+  html, body, #root {
+    background-color: #ffffff;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Inter, "sans-serif";
+  }
+}
+
+.container {
+  width: 1200px;
+}
+
+.dark {
+  background-color: #23272f;
+  color: #ffffff;
+}
+
+.light {
+  background-color: white;
+  color: #000000;
+}

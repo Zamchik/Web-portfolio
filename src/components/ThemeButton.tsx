@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import {ThemeContext, useTheme} from "@/components/ui/ThemeProvider";
+import {ThemeContext, useTheme} from "@/components/ThemeProvider";
 import {themeIcons} from "@/assets";
 
 const ThemeButton = () => {

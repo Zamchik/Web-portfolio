@@ -2,7 +2,7 @@ import {createRoot} from "react-dom/client";
 import {App} from "@/App";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Suspense} from "react";
-import {ThemeProvider} from "@/components/ui/ThemeProvider";
+import {ThemeProvider} from "@/components/ThemeProvider";
 
 const root = document.getElementById('root')
 
