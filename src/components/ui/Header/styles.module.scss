@@ -1,32 +1,38 @@
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #fff;
+  border-bottom: 1px solid #f2f4f5;
+}
+
+.custom_container {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 30px;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 0;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .nickname {
   font-size: 32px;
   font-weight: 700;
-  color: rgb(0, 0, 0);
   text-align: left;
   margin: 0;
-  padding-left: 16px;
-
+  padding-left: 0;
 }
 
 .nav {
   display: flex;
-  justify-content: end;
   align-items: center;
-  gap: 24px;
-  padding: 8px 20px;
-
-  margin: 0 16px;
-  width: 100%;
+  gap: 12px;
+  padding: 8px 0;
+  margin: 0;
+  justify-content: flex-end;
 }
 
 .nav ul {
@@ -36,6 +42,14 @@
   align-items: center;
   margin: 0;
   padding: 0;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+}
+
+.nav img {
+  display: flex;
+  width: 30px;
+  height: auto;
 }
 
 .nav li {

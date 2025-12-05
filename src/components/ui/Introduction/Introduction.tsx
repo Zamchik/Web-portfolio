@@ -2,8 +2,7 @@ import styles from './styles.module.scss';
 
 const Introduction = () => {
     return (
-        <main>
-            <section>
+            <section className={styles.introduction}>
                 <div className={styles.greetContainer_header}>
                     <h1 className={styles.greetContainer}>
                         <span className={styles.greetContainer_name}>Константин</span>
@@ -14,7 +13,6 @@ const Introduction = () => {
                     <h2>Frontend Developer</h2>
                 </div>
             </section>
-        </main>
     )
 }
 
